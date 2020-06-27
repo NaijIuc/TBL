@@ -24,14 +24,14 @@
 ## usethis namespace: start
 ## usethis namespace: end
 TargetPre <- function(single.effect,             # single drugs with effects
-                             combo.effect,              # combination drugs with effects
-                             ref.matrix,                # a matrix containing all drug-target information
-                             single.select.times = 100, # repeat times for single feature selection
-                             single.nfold        = 10,  # fold number for single selection cross-validation
-                             combo.select.times  = 10,  # repeat times for combination features selection
-                             combo.nfold         = 10,  # fold number for combination features selection
-                             model               = 1,   # we have to models for combo selection (1 = glmnet, 2 = biglasso)
-                             n.cores = detectCores()    # number of cores of CPU asking for tasks running
+                      combo.effect,              # combination drugs with effects
+                      ref.matrix,                # a matrix containing all drug-target information
+                      single.select.times = 100, # repeat times for single feature selection
+                      single.nfold        = 10,  # fold number for single selection cross-validation
+                      combo.select.times  = 10,  # repeat times for combination features selection
+                      combo.nfold         = 10,  # fold number for combination features selection
+                      model               = 1,   # we have to models for combo selection (1 = glmnet, 2 = biglasso)
+                      n.cores = detectCores()    # number of cores of CPU asking for tasks running
 ){
 
   # Assigning proper names for the read-in data frame.
