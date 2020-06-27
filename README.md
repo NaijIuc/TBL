@@ -4,7 +4,7 @@ Predicting key therapeutic targets of a disease with Lasso regression, based on 
 ## Installation
 ```R
 # install.packages("devtools")
- devtools::install_github("tidyverse/tidyr")
+ devtools::install_github("NaijIuc/TargetByLasso")
 ```
 ## Getting started
 
