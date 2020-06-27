@@ -1,5 +1,4 @@
 # TargetByLasso
----
 Predicting key therapeutic targets of a disease with Lasso regression, based on the drug test results matrix.
 ---
 ## Installation
