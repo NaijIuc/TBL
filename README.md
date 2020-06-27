@@ -11,5 +11,7 @@ Predicting key therapeutic targets of a disease with Lasso regression, based on 
 
 ``` r
 library(TargetByLasso)
+
+TargetPre(single.effects, combo.effects, ref.matrix)
 ```
-For the main function `TargetPre`, Three files are requested, the single drug effects that can be binomial or continuouse value, the combination drug effects that are binomial only, illustrating either synegism or antagism, and drug-target matrix that can be obtained from [STICH](http://stitch.embl.de/cgi/download.pl?UserId=UfyynCSx9VZy&sessionId=TpAyudNTkNKq). STITCH provides compound-protein relationship with the format of PubChem CIDs vs ensembl peptide IDs, and users can convet to the desired type accordingly.
+For the main function `TargetPre`, Three files are requested, the single drug effects that can be binomial or continuous value (single.effects), the combination drug effects that can be binomial only to illustrate either synergism or antagonism (combo.effects), and drug-target matrix (ref.matrix) that can be obtained from [STICH](http://stitch.embl.de/cgi/download.pl?UserId=UfyynCSx9VZy&sessionId=TpAyudNTkNKq). STITCH provides compound-protein relationships with the format of PubChem CIDs vs Ensembl peptide IDs, and users can convert to the desired type accordingly.
